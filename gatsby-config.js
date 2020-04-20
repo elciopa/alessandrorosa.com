@@ -5,10 +5,10 @@ module.exports = {
     author: `Alessandro Rosà`,
     siteUrl: `https://www.alessandrorosa.com`,
     social: {
-      twitter: `wang0nya`,
+      twitter: `alessandroburns`,
       facebook: ``,
-      github: `wangonya`,
-      linkedin: `wangonya`,
+      github: `elciopa`,
+      linkedin: `alessandrorosa`,
       email: `info@alessandrorosa.com`,
     },
   },
