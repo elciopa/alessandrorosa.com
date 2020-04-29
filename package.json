@@ -28,7 +28,8 @@
     "prop-types": "^15.7.2",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
-    "react-helmet": "^5.2.1"
+    "react-helmet": "^5.2.1",
+    "react-obfuscate": "^3.6.6"
   },
   "devDependencies": {
     "eslint": "^6.5.1",
@@ -47,11 +48,11 @@
   },
   "scripts": {
     "build": "gatsby build",
-    "develop": "gatsby develop",
+    "develop": "gatsby clean && gatsby develop",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\"",
     "lint": "eslint --ext .js,.jsx --ignore-pattern public .",
-    "format": "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js' 'src/**/*.md'",
+    "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"src/**/*.js\" \"src/**/*.md\"",
     "fix-semi": "eslint --quiet --ignore-pattern node_modules --ignore-pattern public --parser babel-eslint --no-eslintrc --rule '{\"semi\": [2, \"never\"], \"no-extra-semi\": [2]}' --fix gatsby-node.js",
     "deploy": "gh-pages -d public"
   }

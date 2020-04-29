@@ -1,12 +1,10 @@
-// https://www.gatsbyjs.org/docs/adding-tags-and-categories-to-blog-posts/#add-tags-to-your-markdown-files
-
 import React from 'react'
 import { Link, graphql } from 'gatsby'
 
 import { kebabCase } from 'lodash'
 
 import Layout from '../components/layout'
-const TagsPage = ({ data }) => {
+const ContactPage = ({ data }) => {
   const allTags = data.allMarkdownRemark.group
 
   return (
@@ -27,7 +25,7 @@ const TagsPage = ({ data }) => {
   )
 }
 
-export default TagsPage
+export default ContactPage
 
 export const pageQuery = graphql`
   query {
