@@ -117,6 +117,4 @@ fabric.properties
 .idea/modules.xml
 .idea/vcs.xml
 public/
-src/components/facepic.jpg
-src/pages/about.js
 .cache/
