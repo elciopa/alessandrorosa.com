@@ -1,7 +1,7 @@
 @import 'normalize';
 @import 'syntax';
 @import 'variables';
-
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 *, *::after, *::before {
   box-sizing: border-box;
 }
@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Montserrat', serif;
   color: $body-color;
   background-color: #fbfbfb;
   margin: 0;

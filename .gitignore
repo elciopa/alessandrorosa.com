@@ -23,6 +23,7 @@ sketch
 # Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
 
 .idea/*
+.cache/*
 # User-specific stuff
 .idea/**/workspace.xml
 .idea/**/tasks.xml
@@ -116,5 +117,4 @@ fabric.properties
 .idea/modules.xml
 .idea/vcs.xml
 public/
-src/components/facepic.jpg
-src/pages/about.js
+.cache/
