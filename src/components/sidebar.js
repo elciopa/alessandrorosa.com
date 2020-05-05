@@ -14,7 +14,7 @@ const Sidebar = ({ siteMetadata }) => (
             </Link>
           </div>
           <div className="author-name">{siteMetadata.author}</div>
-          <p>{siteMetadata.description}</p>
+          <p className="author-description"> {siteMetadata.description}</p>
           <div className="link-sidebar">
             <Link to="/about">ABOUT</Link>
           </div>

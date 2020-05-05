@@ -48,7 +48,7 @@
   },
   "scripts": {
     "build": "gatsby build",
-    "develop": "gatsby clean && gatsby develop",
+    "develop": "gatsby develop",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\"",
     "lint": "eslint --ext .js,.jsx --ignore-pattern public .",
