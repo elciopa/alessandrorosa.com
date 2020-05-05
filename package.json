@@ -26,16 +26,9 @@
     "node-sass": "^4.14.1",
     "prismjs": "^1.20.0",
     "prop-types": "^15.7.2",
-<<<<<<< Updated upstream
-    "react": "^16.10.2",
-    "react-dom": "^16.10.2",
-    "react-helmet": "^5.2.1",
-    "react-obfuscate": "^3.6.6"
-=======
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-helmet": "^5.2.1"
->>>>>>> Stashed changes
   },
   "devDependencies": {
     "eslint": "^6.8.0",
@@ -53,12 +46,7 @@
     "url": "git+https://github.com/NickyMeuleman/gatsby-paginated-blog.git"
   },
   "scripts": {
-    "build": "gatsby build",
-<<<<<<< Updated upstream
-=======
-    "dev": "gatsby develop",
-    "clean": "gatsby clean",
->>>>>>> Stashed changes
+    "build": "gatsby build",   
     "develop": "gatsby develop",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\"",
