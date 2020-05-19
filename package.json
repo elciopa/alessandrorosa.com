@@ -46,7 +46,7 @@
     "url": "git+https://github.com/NickyMeuleman/gatsby-paginated-blog.git"
   },
   "scripts": {
-    "build": "gatsby build",   
+    "build": "gatsby build",
     "develop": "gatsby develop",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\"",

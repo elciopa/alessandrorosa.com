@@ -1,5 +1,5 @@
 ---
-title: Old fashioned guy, I'm attracted by desktops
+title: Old fashioned guy, I definitely prefer desktops
 date: 2015-01-27
 description: # Add post description (optional)
 img: ./caspar-camille-rubin-7SDoly3FV_0-unsplash.jpg # Add image post (optional)
