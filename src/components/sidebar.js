@@ -18,7 +18,7 @@ const Sidebar = ({ siteMetadata }) => (
           <div className="link-sidebar">
             <Link to="/about" style={{ color: `#727F85`, textShadow: `none`, backgroundImage: `none`, textDecoration: `none`}}>
               <div className="item">
-              <i className="caption fa fa-user-circle-o fa-3x" aria-hidden="true" />
+              <i className="caption fa fa-user-circle-o fa-2x" aria-hidden="true" />
                 <span className="caption">ABOUT ME</span>
               </div>
             </Link>
@@ -26,17 +26,17 @@ const Sidebar = ({ siteMetadata }) => (
           <div className="link-sidebar">
             <Link to="/resume" style={{ color: `#727F85`, textShadow: `none`, backgroundImage: `none`, textDecoration: `none`}}>
               <div className="item">
-                <i className="caption fa fa-list-alt fa-3x" aria-hidden="true" />
+                <i className="caption fa fa-address-card-o fa-2x" aria-hidden="true" />
                 <span className="caption">RESUME</span>
               </div>
             </Link>
           </div>
           <div className="link-sidebar">
-            <Link to="/contact" style={{ color: `#727F85`, textShadow: `none`, backgroundImage: `none`, textDecoration: `none`}}>
-            <div className="item">
-              <i className="caption fa fa-user-circle-o fa-3x" aria-hidden="true" />
-              <span className="caption">CONTACT</span>
-            </div>
+            <Link to="/tags" style={{ color: `#727F85`, textShadow: `none`, backgroundImage: `none`, textDecoration: `none`}}>
+              <div className="item">
+                <i className="caption fa fa-tags fa-2x" aria-hidden="true" />
+                <span className="caption">TAGS</span>
+              </div>
             </Link>
           </div>
         </div>
