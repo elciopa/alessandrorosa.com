@@ -6,7 +6,7 @@ const AboutPage = ({ data }) => {
   return (
     <Layout>
       <div className="about-me">
-        <h1>About Gatsby</h1>
+        <h1>about me</h1>
         <section className="container">
         <div className="left-half">
           <content-block>
@@ -19,6 +19,33 @@ const AboutPage = ({ data }) => {
           </content-block>
         </div>
         </section>
+
+        <p className="section-lead">What I do for living</p>
+        <div className="services-grid">
+          <div className="service service1">
+            <i className="ti-bar-chart"></i>
+            <h4>Wealth Management</h4>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat.</p>
+            <a href="#" className="cta">Read More <span className="ti-angle-right"></span></a>
+          </div>
+
+          <div className="service service2">
+            <i className="ti-light-bulb"></i>
+            <h4>Financial Planning</h4>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat.</p>
+            <a href="#" className="cta">Read More <span className="ti-angle-right"></span></a>
+          </div>
+
+          <div className="service service3">
+            <i className="ti-money"></i>
+            <h4>Investment Banking</h4>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat.</p>
+            <a href="#" className="cta">Read more <span className="ti-angle-right"></span></a>
+          </div>
+        </div>
       </div>
     </Layout>
   )
