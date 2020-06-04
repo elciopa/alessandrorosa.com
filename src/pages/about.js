@@ -20,32 +20,22 @@ const AboutPage = ({ data }) => {
         </div>
         </section>
 
-        <p className="section-lead">What I do for living</p>
-        <div className="services-grid">
-          <div className="service service1">
-            <i className="ti-bar-chart"></i>
-            <h4>Wealth Management</h4>
-            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat.</p>
-            <a href="#" className="cta">Read More <span className="ti-angle-right"></span></a>
-          </div>
-
-          <div className="service service2">
-            <i className="ti-light-bulb"></i>
-            <h4>Financial Planning</h4>
-            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat.</p>
-            <a href="#" className="cta">Read More <span className="ti-angle-right"></span></a>
-          </div>
-
-          <div className="service service3">
-            <i className="ti-money"></i>
-            <h4>Investment Banking</h4>
-            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat.</p>
-            <a href="#" className="cta">Read more <span className="ti-angle-right"></span></a>
-          </div>
+      <section className="container">
+        <div className="box__grid">
+          <article className="box"><a className="box__content" href="#"><i className="fa fa-lightbulb-o fa-3x"></i>
+            <h3 className="box__title">Creative Idea</h3>
+            <p>Duis neque leo cursus ac libero ac imperdiet bibendum nisl mauris neque diam vulputate nem.</p><span
+              className="box__more">Read more <i className="fa fa-arrow-right"></i></span></a></article>
+          <article className="box"><a className="box__content" href="#"><i className="fa fa-code fa-3x"></i>
+            <h3 className="box__title">Clean Code</h3>
+            <p>Duis neque leo cursus ac libero ac imperdiet bibendum nisl mauris neque diam vulputate nem.</p><span
+              className="box__more">Read more <i className="fa fa-arrow-right"></i></span></a></article>
+          <article className="box"><a className="box__content" href="#"><i className="fa fa-mobile fa-3x"></i>
+            <h3 className="box__title">Mobile First</h3>
+            <p>Duis neque leo cursus ac libero ac imperdiet bibendum nisl mauris neque diam vulputate nem.</p><span
+              className="box__more">Read more <i className="fa fa-arrow-right"></i></span></a></article>
         </div>
+    </section>
       </div>
     </Layout>
   )

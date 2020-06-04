@@ -56,151 +56,127 @@
   }
 }
 
-
 //Services
 
-*, *:before, *:after {
-  -webkit-box-sizing: inherit;
-  -moz-box-sizing: inherit;
-  box-sizing: inherit;
-}
+// Fonts Family
+$fontDS: 'Dancing Script', cursive;
+$fontMT: 'Montserrat', sans-serif;
+$fontMW: 'Merriweather', serif;
 
-html {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
+// COLORS
+$purple: #3b3b58;
+$pink: #ff4e5c;
 
-section {
-  max-width: 1000px;
-  margin: 0 auto;
-  text-align: center;
-  padding: 30px;
-}
+// SECTION
+.section{
+  padding: 60px 0;
 
-a {
-  text-decoration: none;
-  margin: 1rem 0;
-  font-weight: 600;
-  text-transform: uppercase;
-  font-size: 0.8125rem;
-  letter-spacing: 1px;
-}
+  // TITLE
+  &__title{
+    font-size:24px;
+    color:$purple;
+    text-align:center;
+    font-family: $fontMT;
+    margin: 14px 0;
+  }
 
-h3 {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 600;
-  color: #333;
-  font-size: 1.825rem;
-  margin: 1.3rem 0;
-}
+  // TEXT INTRO
+  &__intro{
+    display:block;
+    text-align:center;
+    margin:0 5% 30px;
 
-.section-lead {
-  max-width: 600px;
-  margin: 1rem auto 1.5rem;
-  padding-top: 50px;
-}
+    // media query 700px
+    @media only screen and (min-width:43.75em){
+      margin-left: 15%;
+      margin-right: 15%;
+    }
 
-.service a {
-  color: #5b7abb;
-  display: block;
-}
+  }
 
-.service h4 {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 600;
-  color: #56ceba;
-  font-size: 1.3rem;
-  margin: 1rem 0 0.6rem;
-}
-
-.services-grid {
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-align: center;
-  align-items: center;
-  max-width: 900px;
-  margin: 1rem auto 1.5rem;
-  padding-top: 50px;
-}
-
-.service {
-  background: #fff;
-  margin: 20px;
-  padding: 20px;
-  border-radius: 4px;
-  text-align: center;
-  -webkit-box-flex: 1;
-  flex: 1;
-  display: -webkit-box;
-  display: flex;
-  flex-wrap: wrap;
-  border: 2px solid #e7e7e7;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-
-.service:hover {
-  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08);
-  -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08);
-}
-
-.service i {
-  font-size: 3.45rem;
-  margin: 1rem 0;
-}
-
-.service1 i,
-.service1 h4,
-.service1 .cta {
-  color: #42b7ca;
-}
-
-.service1:hover {
-  border: 2px solid #42b7ca;
-}
-
-.service2 i,
-.service2 h4,
-.service2 .cta {
-  color: #425fca;
-}
-
-.service2:hover {
-  border: 2px solid #425fca;
-}
-
-.service3 i,
-.service3 h4,
-.service3 .cta {
-  color: #9c42ca;
-}
-
-.service3:hover {
-  border: 2px solid #9c42ca;
-}
-
-.service .cta span {
-  font-size: 0.6rem;
-}
-
-.service > * {
-  flex: 1 1 100%;
-}
-
-.service .cta {
-  align-self: flex-end;
-}
-
-@media all and (max-width:900px) {
-  .services-grid {
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    flex-direction: column;
+  // MOD
+  &--cta{
+    color:#454545;
+    background:#f1f1f1;
   }
 }
 
+// BOX ICONS
+.box{
+  display:flex;
+  flex: 1 0 100%;
+  margin-bottom:20px;
+  background:#f9f9f9;
+
+  &__grid{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__title{
+    font-family:$fontMT;
+  }
+
+  &__more{
+    color:$pink;
+  }
+
+  &__content{
+    color:#454545;
+    text-align:center;
+    padding:20px;
+
+    > i{
+      color:$purple;
+    }
+
+    &:hover{
+      .box__more{
+        color:darken($pink, 5%);
+        i{
+          padding-left:4px;
+          transition: all .2s ease-in-out;
+        }
+      }
+    }
+
+  }
+
+
+  // media query 700px
+  @media only screen and (min-width:43.75em){
+    flex:0 0 30%;
+  }
+
+}
+
+
+// BUTTON
+.btn{
+  color:#fff;
+  font-family:$fontMT;
+  text-align:center;
+  display:block;
+  margin: 0 auto;
+  max-width:300px;
+  padding:12px 18px;
+  border-radius:100px;
+  background:$pink;
+
+  &:hover{
+    background: darken($pink, 5%);
+  }
+}
+
+// Footer
+.footer{
+  color:#fff;
+  text-align:center;
+  padding:10px 0;
+  background:$purple;
+  p{
+    opacity:.65;
+  }
+
+}
