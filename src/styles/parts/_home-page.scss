@@ -32,7 +32,7 @@
     }
   }
   .author-name {
-    font-family: 'PT Serif', serif;
+    font-family: 'Montserrat', serif;
     margin: 0 0 10px;
     position: relative;
     padding-bottom: 15px;
@@ -63,15 +63,29 @@
   }
 }
 
-.link-sidebar {
-  font-family: 'PT Serif', serif;
+.link-sidebar{
+  font-family: 'Montserrat', serif;
   margin: 10px 10px 10px;
   position: relative;
   font-weight: bold;
   padding-top: 15px;
   padding-bottom: 15px;
-  font-size: 25px;
+  font-size: 15px;
   text-transform: uppercase;
+  text-align: center;
+}
+
+.item{
+  vertical-align: top;
+  display: inline-block;
+  text-align: center;
+  width: 100px;
+}
+
+.caption {
+  padding-top: 12px;
+  display: block;
+  font-size: 12px;
 }
 
 .content-box {

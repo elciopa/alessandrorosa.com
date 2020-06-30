@@ -16,13 +16,28 @@ const Sidebar = ({ siteMetadata }) => (
           <div className="author-name">{siteMetadata.author}</div>
           <p className="author-description"> {siteMetadata.description}</p>
           <div className="link-sidebar">
-            <Link to="/about">ABOUT</Link>
+            <Link to="/about" style={{ color: `#727F85`, textShadow: `none`, backgroundImage: `none`, textDecoration: `none`}}>
+              <div className="item">
+              <i className="caption fa fa-user-circle-o fa-2x" aria-hidden="true" />
+                <span className="caption">ABOUT ME</span>
+              </div>
+            </Link>
           </div>
           <div className="link-sidebar">
-            <Link to="/resume">RESUME</Link>
+            <Link to="/resume" style={{ color: `#727F85`, textShadow: `none`, backgroundImage: `none`, textDecoration: `none`}}>
+              <div className="item">
+                <i className="caption fa fa-address-card-o fa-2x" aria-hidden="true" />
+                <span className="caption">RESUME</span>
+              </div>
+            </Link>
           </div>
           <div className="link-sidebar">
-            <Link to="/contact">CONTACT</Link>
+            <Link to="/tags" style={{ color: `#727F85`, textShadow: `none`, backgroundImage: `none`, textDecoration: `none`}}>
+              <div className="item">
+                <i className="caption fa fa-tags fa-2x" aria-hidden="true" />
+                <span className="caption">TAGS</span>
+              </div>
+            </Link>
           </div>
         </div>
       </header>
