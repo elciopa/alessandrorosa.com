@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Cool breakfast`,
+    title: `AlessandroRosá`,
     description: `I am a software engineer focused on web technologies. Always looking for next new techs`,
     author: `Alessandro Rosà`,
     siteUrl: `https://www.alessandrorosa.com`,
@@ -59,7 +59,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `./static/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `./static/favicon.png`, // This path is relative to the root of the site.
       },
     },
     // `gatsby-plugin-offline`,
