@@ -1,6 +1,12 @@
 import React from 'react'
 import Layout from '../components/layout'
 
+import SwEngineerPic from '../../static/about/coding-300x300.png'
+import ServerPic from '../../static/about/server-300x300.png'
+import DevOpsPic from '../../static/about/devops-300x300.png'
+import MountainPic from '../../static/about/road-300x300.png'
+
+
 const AboutPage = ({ data }) => {
 
   return (
@@ -26,32 +32,32 @@ const AboutPage = ({ data }) => {
                 <div className="article_center2">
                   <article className="section1_article">
                     <img alt="SWEngineer"
-                         src="http://icons.iconarchive.com/icons/jozef89/services-flat/512/ecommerce-icon.png"
+                         src={SwEngineerPic}
                          width="78" height="77"/>
                       <h3>SOFTWARE ENGINEER</h3>
                       <p>I design cool web apps: backend and frontend skills. Preferred languages are C#, Java, Javascript.  The websites and CMSs (mostly WordPress) I develop are just for fun and not as full time employee.</p>
                   </article>
                   <article className="section1_article">
                     <img alt="SysEngineer"
-                         src="http://icons.iconarchive.com/icons/jozef89/services-flat/512/responsive-web-icon.png"
+                         src={ServerPic}
                          width="78" height="77"/>
                       <h3>SYSTEMS ENGINEER</h3>
                       <p>TCP/IP protocols, networks, subnets, subnet masks, routing, firewalls, switches, CAT 5e, 6, 7, SNMP monitoring, VLANs. I feel comfortable designing and troubleshooting ICT architectures.</p>
                   </article>
                   <article className="section1_article">
                     <img alt="DevOps"
-                         src="https://cdn0.iconfinder.com/data/icons/web-development-2/512/security_lock_password_protection_secure_locking_system_safe_privacy_private_safety_encryption_flat_design_icon-512.png"
+                         src={DevOpsPic}
                          width="78" height="77"/>
                       <h3>DEVOPS</h3>
                       <p>I’m able to automated software deployment using continuous integrations tools, create Docker containers and connect them to create reliable and redundant systems.</p>
                   </article>
                   <article className="section1_article">
                     <img alt="DevOps"
-                         src="https://cdn0.iconfinder.com/data/icons/web-development-2/512/security_lock_password_protection_secure_locking_system_safe_privacy_private_safety_encryption_flat_design_icon-512.png"
+                         src={MountainPic}
                          width="78" height="77"/>
-                    <h3>DEVOPS</h3>
+                    <h3>SKIALPER</h3>
                     <content-block>
-                    <p>I’m able to automated software deployment using continuous integrations tools, create Docker containers and connect them to create reliable and redundant systems.</p>
+                    <p>In love with mountains and peaks, it has been really easy to be captured by this amazing sport.  Free-heels ascents and free ride descents it’s the way I’d like to spend my spare time.</p>
                     </content-block>
                   </article>
                 </div>
