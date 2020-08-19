@@ -6,6 +6,8 @@ import Img from 'gatsby-image'
 import DefaultLayout from '../components/layout'
 import SEO from '../components/seo'
 
+import "katex/dist/katex.min.css"
+
 class BlogPostTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark
@@ -14,30 +16,31 @@ class BlogPostTemplate extends React.Component {
     return (
       <DefaultLayout>
         <SEO title={post.frontmatter.title} description={post.excerpt} />
-        <article className="article-page">
-          <div className="page-content">
-            {post.frontmatter.img && (
-              <div className="page-cover-image">
-                <figure>
-                  <Img
-                    className="page-image"
-                    key={post.frontmatter.img.childImageSharp.fluid.src}
-                    fluid={post.frontmatter.img.childImageSharp.fluid}
-                  />
-                </figure>
-              </div>
-            )}
-            <div className="wrap-content">
-              <header className="header-page">
-                <h1 className="page-title">{post.frontmatter.title}</h1>
-                <div className="page-date">
-                  <span>{post.frontmatter.date}</span>
+        <div className="clearfix post-content-box">
+          <article className="article-page">
+            <div className="page-content">
+              {post.frontmatter.img && (
+                <div className="page-cover-image">
+                  <figure>
+                    <Img
+                      className="page-image"
+                      key={post.frontmatter.img.childImageSharp.fluid.src}
+                      fluid={post.frontmatter.img.childImageSharp.fluid}
+                    />
+                  </figure>
                 </div>
-              </header>
-              <div dangerouslySetInnerHTML={{ __html: post.html }} />
-              <div className="page-footer">
-                <div className="page-tag">
-                  {post.frontmatter.tags &&
+              )}
+              <div className="wrap-content">
+                <header className="header-page">
+                  <h1 className="page-title">{post.frontmatter.title}</h1>
+                  <div className="page-date">
+                    <span>{post.frontmatter.date}</span>
+                  </div>
+                </header>
+                <div dangerouslySetInnerHTML={{ __html: post.html }} />
+                <div className="page-footer">
+                  <div className="page-tag">
+                    {post.frontmatter.tags &&
                     post.frontmatter.tags.map(tag => (
                       <span key={tag}>
                         <Link className="tag" to={`/tags/${kebabCase(tag)}/`}>
@@ -45,11 +48,12 @@ class BlogPostTemplate extends React.Component {
                         </Link>
                       </span>
                     ))}
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        </article>
+          </article>
+        </div>
       </DefaultLayout>
     )
   }
