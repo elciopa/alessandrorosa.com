@@ -2,7 +2,7 @@
 title: Gatsby compared to Wordpress
 date: 2020-05-05 00:00:00 +0300
 description: # Add post description (optional)
-img: ./2curious-cCHfM8sU944-unsplash.jpg # Add image post (optional)
+img: ./ilya-pavlov-OqtafYT5kTw-unsplash.jpg # Add image post (optional)
 tags: [GatsbyJs, React, Wordpress, Frontend] # add tag
 ---
 
