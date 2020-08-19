@@ -1,6 +1,6 @@
 ---
 title: 'Welcome to Gatsby!'
-date: 2010-04-06 13:32:20 +0300
+date: 2017-04-06 13:32:20 +0300
 description: Go ahead and edit this file and re-build the site to see your changes. # Add post description (optional)
 img: # Add image post (optional)
 ---
@@ -15,7 +15,12 @@ There's support for code snippets:
 console.log('Hello, World!')
 ```
 
-![gatsby](gatsby-astronaut.png)
+And also LaTeX functions using the [KaTeX plugin][katex-plugin]: $a^2 + b^2 = c^2$
+
+You can even [link files for download](hello_world.zip)
+
+![gatsby](./gatsby-astronaut.png)
 Check out the [Gatsby docs][gatsby-docs] for more info on how to get the most out of Gatsby.
 
 [gatsby-docs]: https://www.gatsbyjs.org/docs/
+[katex-plugin]: https://www.gatsbyjs.org/packages/gatsby-remark-katex/
