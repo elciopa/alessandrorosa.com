@@ -6,7 +6,7 @@ import Img from 'gatsby-image'
 import DefaultLayout from '../components/layout'
 import SEO from '../components/seo'
 
-import "katex/dist/katex.min.css"
+import 'katex/dist/katex.min.css'
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -41,13 +41,13 @@ class BlogPostTemplate extends React.Component {
                 <div className="page-footer">
                   <div className="page-tag">
                     {post.frontmatter.tags &&
-                    post.frontmatter.tags.map(tag => (
-                      <span key={tag}>
-                        <Link className="tag" to={`/tags/${kebabCase(tag)}/`}>
-                          # {tag}
-                        </Link>
-                      </span>
-                    ))}
+                      post.frontmatter.tags.map((tag) => (
+                        <span key={tag}>
+                          <Link className="tag" to={`/tags/${kebabCase(tag)}/`}>
+                            # {tag}
+                          </Link>
+                        </span>
+                      ))}
                   </div>
                 </div>
               </div>
