@@ -26,7 +26,7 @@ const DefaultLayout = ({ children }) => (
         }
       }
     `}
-    render={data => (
+    render={(data) => (
       <div className="wrapper">
         <Helmet>
           <link

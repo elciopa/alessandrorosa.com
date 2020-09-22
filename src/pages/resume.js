@@ -12,7 +12,7 @@ const ResumePage = ({ data }) => {
       <div className="blog-tags">
         <h1>Tags</h1>
         <ul className="tags">
-          {allTags.map(tag => (
+          {allTags.map((tag) => (
             <li key={tag.fieldValue}>
               <Link to={`/tags/${kebabCase(tag.fieldValue)}/`} className="tag">
                 {tag.fieldValue} ({tag.totalCount})
