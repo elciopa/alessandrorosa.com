@@ -109,7 +109,7 @@ table tfoot td {
 }
 
 .wrapper {
-  max-width: 1250px;
+  max-width: 1920px;
   position: relative;
 }
 
@@ -148,5 +148,8 @@ table tfoot td {
 /* - - - - - - - - - - Media Styles - - - - - - - - - - */
 @import 'media';
 
-/* - - - - - - - - - - Tag Styles - - - - - - - - - - */
+/* - - - - - - - - - - About Styles - - - - - - - - - - */
 @import 'parts/about';
+
+/* - - - - - - - - - - Resume Styles - - - - - - - - - - */
+@import 'parts/resume';

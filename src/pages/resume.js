@@ -9,7 +9,7 @@ const ResumePage = ({ data }) => {
 
   return (
     <Layout>
-      <div className="blog-tags">
+      <div className="resume-tags">
         <h1>Tags</h1>
         <ul className="tags">
           {allTags.map((tag) => (
